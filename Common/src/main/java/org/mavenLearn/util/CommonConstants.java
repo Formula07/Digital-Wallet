@@ -10,4 +10,5 @@ public class CommonConstants {
     public static String USER_IDENTIFIER_VALUE="USER_IDENTIFIER_VALUE";
     public static String USER_ID="USER_ID";
     public static String USER_DETAILS_QUEUE_TOPIC="USER_DETAILS_QUEUE";
+    public static String USER_PASSWORD = "USER_PASSWORD";
 }

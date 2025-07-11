@@ -56,4 +56,16 @@ public class UserService {
         }
         return null;
     }
+
+    public String findUserByUsername(String username){
+        User user = userRepository.findByMobileNo(username);
+        if(user==null){
+            return null;
+        }
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(CommonConstants.USER_NAME, user.getMobileNo());
+        jsonObject.put(CommonConstants.USER_PASSWORD, user.getPassword());
+
+        return jsonObject.toString();
+    }
 }
